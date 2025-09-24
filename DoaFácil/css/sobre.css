@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #FAFAFA;
+  margin: 0;
+  color: #212121;
+}
+
+header {
+  background: #388E3C;
+  color: white;
+  padding: 1em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-content h1 {
+  margin: 0;
+  margin-left: 10px; /* espaço entre seta e título */
+}
+
+.voltar svg {
+  fill: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.voltar:hover svg {
+  transform: scale(1.1);
+}
+
+main {
+  padding: 2em;
+}
+
+.descricao, .ods {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

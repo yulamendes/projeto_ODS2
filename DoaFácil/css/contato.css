@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #FAFAFA;
+  margin: 0;
+}
+
+header {
+  background: #388E3C;
+  color: white;
+  padding: 1em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-content h1 {
+  margin: 0;
+  margin-left: 10px; /* espaço entre seta e título */
+}
+
+.voltar svg {
+  fill: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.voltar:hover svg {
+  transform: scale(1.1);
+}
+
+main {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.7em;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+}
+
+button {
+  background: #388E3C;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
