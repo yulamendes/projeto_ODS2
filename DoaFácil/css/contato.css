@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   background: #FAFAFA;
   margin: 0;
+  color: #212121;
 }
 
 header {
@@ -11,13 +12,14 @@ header {
 }
 
 .header-content {
-  display: flex;
-  align-items: center;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
 .header-content h1 {
   margin: 0;
-  margin-left: 10px; /* espaço entre seta e título */
+  margin-left: 10px; 
 }
 
 .voltar svg {
@@ -61,3 +63,52 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.info-contato {
+  padding: 3rem 1rem;
+  background: #FAFAFA;
+}
+
+.card-info {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.card-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-info i {
+  font-size: 2.5rem;
+  color: #2e7d32; 
+  margin-bottom: 1rem;
+}
+
+.card-info h3 {
+  font-size: 1.25rem;
+  color: #212121;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-info p {
+  color: #555;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* rodape footer */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+

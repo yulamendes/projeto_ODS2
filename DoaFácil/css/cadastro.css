@@ -1,12 +1,21 @@
-/* Reset básico */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  background: #e8f5e9;
   color: #333;
 }
 
-/* Cabeçalho */
+/* bootstrap */
+.navbar {
+  background-color: #2e7d32 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 200px;
+  width: auto;
+}
+
 header {
   background: #2e7d32;
   color: white;
@@ -25,7 +34,12 @@ nav a {
   font-weight: bold;
 }
 
-/* Container principal */
+.navbar-nav .nav-link:hover {
+  color: #F78B28 !important; /* laranja no hover */
+  transform: scale(1.25); /* zoom ao passar o cursor do mouse */
+}
+
+/* container principal */
 .form-container {
   max-width: 800px;
   margin: 2rem auto;
@@ -45,7 +59,7 @@ nav a {
   margin-bottom: 1.5rem;
 }
 
-/* Formulários */
+/* formularios */
 .form-box {
   flex: 1 1 300px;
   display: flex;
@@ -82,9 +96,11 @@ nav a {
 
 .form-box button:hover {
   background: #1b5e20;
+  background-color: #F78B28 !important; /* laranja no hover */
+  transform: scale(1.00); /* zoom ao passar o cursor do mouse */
 }
 
-/* Rodapé */
+/* rodape footer */
 footer {
   background: #2e7d32;
   color: white;
