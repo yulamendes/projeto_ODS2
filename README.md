@@ -1,4 +1,4 @@
-# projeto_ODS2
+DoaFácil - Plataforma de doação de alimentos (ODS 2)
 Projeto realizado na Uninassau Boa Viagem para o curso de Análise e Desenvolvimento de Sistemas pelos alunos:
 - Daniel Tenório - 01786636
 - Mariana Cristina - 01259839
@@ -7,8 +7,4 @@ Projeto realizado na Uninassau Boa Viagem para o curso de Análise e Desenvolvim
 
 Docente responsável: Vanessa Rodrigues da Silva
 
-DoaFácil - Plataforma de doação de alimentos
-
-Nesse projeto usamos a OBS 2 - Fome Zero e Agricultura Sustentável que tem como objetivo acabar com a fome, alcançar a segurança alimentar, melhorar a nutrição e promover a agricultura sustentável até 2030.
-
-
+Nesse projeto usamos a ODS 2 - Fome Zero e Agricultura Sustentável que tem como objetivo acabar com a fome, alcançar a segurança alimentar, melhorar a nutrição e promover a agricultura sustentável até 2030.
