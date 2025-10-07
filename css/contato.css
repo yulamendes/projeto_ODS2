@@ -103,6 +103,29 @@ button {
   font-size: 0.95rem;
 }
 
+/* ajustes para celulares */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* rodape footer */
 footer {
   background: #2e7d32;
