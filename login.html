@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro - DoaFácil</title>
+  <title>Login - DoaFácil</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/DoaFácil/css/style.css">
-  <link rel="stylesheet" href="/DoaFácil/css/cadastro.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/cadastro.css">
 
 </head>
 <body>
@@ -17,7 +17,7 @@
     <div class="container">
 
       <a class="navbar-brand" href="index.html">
-        <img src="/DoaFácil/img/doa facil branco png.png" alt="DoaFácil" width="180">
+        <img src="/img/doa facil branco png.png" alt="DoaFácil" width="180">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -50,36 +50,28 @@
     </div>
   </nav>
 
-
   <main>
     <section class="form-container">
-      <h2>Criar Conta</h2>
+      <h2>Entrar</h2>
 
-      <!-- Cadastro -->
-      <form class="form-box" id="registerForm" action="index.html" method="post">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+      <!-- login -->
+      <form class="form-box" id="loginForm" action="index.html" method="post">
+        <label for="email-login">Email</label>
+        <input type="email" id="email-login" name="email-login" placeholder="Digite seu e-mail" required>
 
-        <label for="email-cadastro">Email</label>
-        <input type="email" id="email-cadastro" name="email-cadastro" placeholder="Digite seu e-mail" required>
+        <label for="senha-login">Senha</label>
+        <input type="password" id="senha-login" name="senha-login" placeholder="Digite sua senha" required>
 
-        <label for="senha-cadastro">Senha</label>
-        <input type="password" id="senha-cadastro" name="senha-cadastro" placeholder="Digite sua senha" required>
-
-        <label for="tipo">Tipo de Usuário</label>
-        <select id="tipo" name="tipo">
-          <option value="pessoa">Pessoa Física</option>
-          <option value="empresa">Empresa</option>
-        </select>
-
-        <button type="submit">Cadastrar</button>
+        <button type="submit">Entrar</button>
       </form>
     </section>
+
     <script src="js/alerts.js"></script>
   </main>
 
   <footer>
     <p>&copy; 2025 DoaFácil - Plataforma de Doação de Alimentos</p>
   </footer>
+
 </body>
 </html>

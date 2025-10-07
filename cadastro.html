@@ -3,29 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DoaFácil - Plataforma de Doação de Alimentos</title>
+  <title>Cadastro - DoaFácil</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/DoaFácil/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/cadastro.css">
+
 </head>
 <body>
 
-   <!-- menu responsivo no navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2e7d32;">
     <div class="container">
 
-      <!-- logo -->
       <a class="navbar-brand" href="index.html">
-        <img src="/DoaFácil/img/doa facil branco png.png" alt="DoaFácil" width="180">
+        <img src="/img/doa facil branco png.png" alt="DoaFácil" width="180">
       </a>
 
-       <!-- botao hamburguer -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- menu -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto"> 
           <li class="nav-item">
@@ -35,7 +33,6 @@
             <a class="nav-link" href="sobre.html">Sobre</a>
           </li>
 
-          <!-- dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Cadastro
             </a>
@@ -53,55 +50,36 @@
     </div>
   </nav>
 
-  <section class="hero">
-    <h1 id="texto-digitado"></h1>
 
-<script>
-  const texto = "Ajude a combater a fome na sua cidade!";
-  const elemento = document.getElementById("texto-digitado");
-  let i = 0;
-  
+  <main>
+    <section class="form-container">
+      <h2>Criar Conta</h2>
 
-  function digitar() {
-    if (i < texto.length) {
-      elemento.textContent += texto.charAt(i);
-      i++;
-      setTimeout(digitar, 80); 
-    } 
-    else { setTimeout(() => {
-      elemento.textContent = "";
-      i = 0;
-      digitar();
-     }, 1500); 
-    }
-  }
+      <!-- Cadastro -->
+      <form class="form-box" id="registerForm" action="index.html" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
-  digitar();
-</script>
+        <label for="email-cadastro">Email</label>
+        <input type="email" id="email-cadastro" name="email-cadastro" placeholder="Digite seu e-mail" required>
 
-    <p>Conectamos doadores e pessoas em necessidade de forma simples e rápida.</p>
-    <div class="buttons">
-      <a href="doar.html">Quero doar</a>
-      <a href="solicitar.html">Preciso de doação</a>
-    </div>
-  </section>
+        <label for="senha-cadastro">Senha</label>
+        <input type="password" id="senha-cadastro" name="senha-cadastro" placeholder="Digite sua senha" required>
 
-  <section class="section">
-    <h2>Como Funciona</h2>
-    <p>1. Cadastre-se como doador ou receptor.</p>
-    <p>2. Publique uma doação ou solicitação.</p>
-    <p>3. Combine a entrega ou retirada de forma segura.</p>
-  </section>
+        <label for="tipo">Tipo de Usuário</label>
+        <select id="tipo" name="tipo">
+          <option value="pessoa">Pessoa Física</option>
+          <option value="empresa">Empresa</option>
+        </select>
 
-  <section class="section">
-    <h2>Nosso Impacto</h2>
-    <p>• +500 famílias atendidas.</p>
-    <p>• +10 toneladas de alimentos doados.</p>
-  </section>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+    <script src="js/alerts.js"></script>
+  </main>
 
   <footer>
     <p>&copy; 2025 DoaFácil - Plataforma de Doação de Alimentos</p>
   </footer>
-
 </body>
 </html>
